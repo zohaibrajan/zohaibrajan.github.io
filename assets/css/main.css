@@ -3166,6 +3166,23 @@ button:disabled,
 	color: #ffffff;
 }
 
+.projects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75px;
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+	display: flex;
+	align-items: center;
+}
+
+#project-title {
+	margin: 0;
+}
+
 .wrapper.style3 input[type="text"],
 .wrapper.style3 input[type="password"],
 .wrapper.style3 input[type="email"],
