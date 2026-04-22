@@ -124,11 +124,13 @@ people to lead</p>
 							</div>
 						</section> -->
 						<section class="spotlight">
-							<div class="image"><img src=""" alt="" /></div><div class="content">
+							<div class="image"><img src="images/hoops_coach.png" alt="" /></div><div class="content">
 								<h2>Discovery Project</h2>
-								<a href="" target="_blank" class="button" id="">View Project</a>
+								<a href="https://github.com/zohaibrajan/hoop_project" target="_blank" class="button" id="">View Project</a>
 								<div style="margin-bottom: 10px;"></div>
-								<p>Work in progress...</p>
+								<p>Hoops Coach AI is a full-stack computer vision application that turns any smartphone into a real-time basketball coaching system. The app streams live camera footage, analyzes player form using Claude's multimodal Vision API, and delivers spoken audio coaching cues through the phone speaker — replicating the experience of having a coach watching you practice from the sideline. It supports five focus modes (shooting, dribbling, footwork, defense, or full session) and gives players a personalized session summary with drill recommendations at the end.</p>
+<p>On the technical side, the app is built with Python and Flask on the backend, with a vanilla JavaScript frontend that handles camera capture via the browser's getUserMedia API, sends compressed frames to the server every few seconds, and pipes the AI's response into the Web Speech API for text-to-speech output. A priority interrupt queue ensures urgent cues cut through immediately rather than stacking up as stale feedback. Solving camera access on local networks required generating a self-signed SSL certificate at setup, since browsers block camera permissions over plain HTTP on non-localhost addresses.</p>
+<p>The core engineering challenge was less about infrastructure and more about human-computer interaction — specifically, how to convert raw visual analysis into feedback that's actually useful mid-practice. Getting the AI to produce cues that sound like a real coach ("tuck your elbow in") rather than a checklist ("elbow alignment could be improved") required careful prompt design with strict constraints on length, voice, and specificity. The project demonstrates how multimodal LLMs can serve as the reasoning layer in perception pipelines where traditional computer vision would require large labeled datasets and custom model training.</p>
 						</section>
 					</section>
 
